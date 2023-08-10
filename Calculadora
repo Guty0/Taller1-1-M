@@ -1,21 +1,19 @@
-
+impor java.util.Scanner;
 public class Calculadora 
 {
 
     public static void main(String[] args) {
-      int opc = 0;
-      Scanner in = new Scanner(System.in);
+
+      Scanner sn = new Scanner(System.in);
+      boolean salir = false;
+      int opcion;
+
+      while(!salir) {
+
       for (;;) {
               System.out.println("\t CALCULADORA\n\n1. Suma\n2. Resta\n3. Multipilicacion\n4. Division\n5. Seno\n6. Coseno\n7. Tanjente\n5. Seno\n8. Raiz\n9. Potensia\n10. IVA\n11. Salir");
               do {
-                  System.out.println("Digite su opcion [1-11]: ");
-                  opc = in.nextInt();
-              
-                 } while (opc < 0 || opc > 11);
-                   switch(opc) {
-                      case 1:  break;
-                      case 2:  break;
-                      //....
+            
             }
         }
     }
