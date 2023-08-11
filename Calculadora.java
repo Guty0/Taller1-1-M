@@ -36,6 +36,8 @@ public class JavaApplication1 {
                       break;
                   case 6:
                       System.out.println("\t COSENO");
+                      double x = Math.cos(0.5);
+                      System.out.println(x);
                       break;
                   case 7:
                       System.out.println("\t TANGENTE");
