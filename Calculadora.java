@@ -1,11 +1,10 @@
 
-package javaapplication1;
+package Calculadora;
 
 import java.util.Scanner;
 
-public class JavaApplication1 {
+public class Calculadora {
 
-    
     public static void main(String[] args) {
       Scanner sn = new Scanner(System.in);
       boolean salir = false;
