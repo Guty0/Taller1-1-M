@@ -1,6 +1,4 @@
-
 package Calculadora;
-
 import java.util.Scanner;
 
 public class Calculadora {
@@ -30,13 +28,13 @@ public class Calculadora {
                       break;
                   case 5:
                       System.out.println("\t SENO");
-                      double x = Math.sin(0.5);
+                      double h = sn.nextDouble();
+                      double x = Math.sin(h);
                       System.out.println(x);
                       break;
                   case 6:
                       System.out.println("\t COSENO");
-                      double x = Math.cos(0.5);
-                      System.out.println(x);
+            
                       break;
                   case 7:
                       System.out.println("\t TANGENTE");
