@@ -16,15 +16,31 @@ public class Calculadora {
               switch(opcion){
                   case 1:
                       System.out.println("\t SUMA");
+                      double c = sn.nextDouble();
+                      double d = sn.nextDouble();
+                      double e = c+d;
+                      System.out.println(e);
                       break;
                   case 2:
                       System.out.println("\t RESTA");
+                      double f = sn.nextDouble();
+                      double g = sn.nextDouble();
+                      double i = f-g;
+                      System.out.println(i);
                       break;
                   case 3:
                       System.out.println("\t MULTIPLICACION");
+                      double j = sn.nextDouble();
+                      double k = sn.nextDouble();
+                      double l = j*k;
+                      System.out.println(l);
                       break;
                   case 4:
                       System.out.println("\t DIVISION");
+                      double m = sn.nextDouble();
+                      double n = sn.nextDouble();
+                      double o = m/n;
+                      System.out.println(o);
                       break;
                   case 5:
                       System.out.println("\t SENO");
@@ -34,10 +50,15 @@ public class Calculadora {
                       break;
                   case 6:
                       System.out.println("\t COSENO");
-            
+                      double a = sn.nextDouble();
+                      double b = Math.cos(a);
+                      System.out.println(b);
                       break;
                   case 7:
                       System.out.println("\t TANGENTE");
+                      double p = sn.nextDouble();
+                      double q = Math.tan(p);
+                      System.out.println(q);
                       break;
                   case 8:
                       System.out.println("\t RAIZ");
