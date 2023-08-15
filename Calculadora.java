@@ -62,9 +62,17 @@ public class Calculadora {
                       break;
                   case 8:
                       System.out.println("\t RAIZ");
+                      int t=sn.nextInt();
+                      double r = sn.nextDouble();
+                      double s = Math.pow(r,1.0/t);
+                      System.out.println(s);
                       break;
                   case 9:
                       System.out.println("\t POTENCIA");
+                      int u=sn.nextInt();
+                      double v = sn.nextDouble();
+                      double y = Math.pow(v, u);
+                      System.out.println(y);
                       break;
                   case 10:
                       System.out.println("\t IVA");
