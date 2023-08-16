@@ -16,66 +16,70 @@ public class Calculadora {
               switch(opcion){
                   case 1:
                       System.out.println("\t SUMA");
-                      double c = sn.nextDouble();
-                      double d = sn.nextDouble();
-                      double e = c+d;
-                      System.out.println(e);
+                      double Num1 = sn.nextDouble();
+                      double Num2 = sn.nextDouble();
+                      double Sum = Num1+Num2;
+                      System.out.println(Sum);
                       break;
                   case 2:
                       System.out.println("\t RESTA");
-                      double f = sn.nextDouble();
-                      double g = sn.nextDouble();
-                      double i = f-g;
-                      System.out.println(i);
+                      double Num3 = sn.nextDouble();
+                      double Num4 = sn.nextDouble();
+                      double Res = Num3-Num4;
+                      System.out.println(Res);
                       break;
                   case 3:
                       System.out.println("\t MULTIPLICACION");
-                      double j = sn.nextDouble();
-                      double k = sn.nextDouble();
-                      double l = j*k;
-                      System.out.println(l);
+                      double Num5 = sn.nextDouble();
+                      double Num6 = sn.nextDouble();
+                      double Mul = Num5*Num6;
+                      System.out.println(Mul);
                       break;
                   case 4:
                       System.out.println("\t DIVISION");
-                      double m = sn.nextDouble();
-                      double n = sn.nextDouble();
-                      double o = m/n;
-                      System.out.println(o);
+                      double Num7 = sn.nextDouble();
+                      double Num8 = sn.nextDouble();
+                      double Div = Num7/Num8;
+                      System.out.println(Div);
                       break;
                   case 5:
                       System.out.println("\t SENO");
-                      double h = sn.nextDouble();
-                      double x = Math.sin(h);
-                      System.out.println(x);
+                      double Num9 = sn.nextDouble();
+                      double Sin = Math.sin(Num9);
+                      System.out.println(Sin);
                       break;
                   case 6:
                       System.out.println("\t COSENO");
-                      double a = sn.nextDouble();
-                      double b = Math.cos(a);
-                      System.out.println(b);
+                      double Num10 = sn.nextDouble();
+                      double Cos = Math.cos(Num10);
+                      System.out.println(Cos);
                       break;
                   case 7:
                       System.out.println("\t TANGENTE");
-                      double p = sn.nextDouble();
-                      double q = Math.tan(p);
-                      System.out.println(q);
+                      double Num11 = sn.nextDouble();
+                      double Tan = Math.tan(Num11);
+                      System.out.println(Tan);
                       break;
                   case 8:
                       System.out.println("\t RAIZ");
-                      int t=sn.nextInt();
-                      double r = sn.nextDouble();
-                      double s = Math.pow(r,1.0/t);
-                      System.out.println(s);
+                      int Indice=sn.nextInt();
+                      double Num12 = sn.nextDouble();
+                      double Rai = Math.pow(Num12,1.0/Indice);
+                      System.out.println(Rai);
                       break;
                   case 9:
                       System.out.println("\t POTENCIA");
-                      int u=sn.nextInt();
-                      double v = sn.nextDouble();
-                      double y = Math.pow(v, u);
-                      System.out.println(y);
+                      int Potencia=sn.nextInt();
+                      double Num13 = sn.nextDouble();
+                      double Pot = Math.pow(Num13, Potencia);
+                      System.out.println(Pot);
                       break;
                   case 10:
                       System.out.println("\t IVA");
+                      double montoCalcular = sn.nextDouble();
+                      double IVA=19;
+                      double Calculo= montoCalcular * (IVA/100);
+                      System.out.println(Calculo);
                       break;
                   default:
                       System.out.println("Seleccionar opciones del 1-10");
