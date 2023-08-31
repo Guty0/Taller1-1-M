@@ -1,0 +1,146 @@
+
+package Calculadora;
+
+public class Importar {
+    private String cadena;
+    private double resultado;
+    private boolean suma;
+    private boolean resta;
+    private boolean multiplicacion;
+    private boolean division;
+    private boolean potencia;
+    private boolean raiz;
+    private boolean seno;
+    private boolean coseno;
+    private boolean tangente;
+    private boolean IVA;
+    
+    public Importar () {
+        cadena="";
+        suma=false;
+        resta=false;
+        multiplicacion=false;
+        division=false;
+        potencia=false;
+        raiz=false;
+        seno=false;
+        coseno=false;
+        tangente=false;
+        IVA=false;
+        
+        
+    }
+    
+    public String concatenamiento(String cadena){
+        
+        this.cadena=this.cadena+cadena;
+        return this.cadena;
+        
+    }
+    public void suma(String cadena) {
+        this.resultado=Double.parseDouble(cadena);
+        suma=true;
+        this.cadena="";
+    }
+    public void resta(String cadena) {
+        this.resultado=Double.parseDouble(cadena);
+        resta=true;
+        this.cadena="";
+    }
+     public void multiplicacion(String cadena) {
+        this.resultado=Double.parseDouble(cadena);
+        multiplicacion=true;
+        this.cadena="";
+    }
+      public void division(String cadena) {
+        this.resultado=Double.parseDouble(cadena);
+        division=true;
+        this.cadena="";
+    }
+       public void potencia(String cadena) {
+        this.resultado=Double.parseDouble(cadena);
+        potencia=true;
+        this.cadena="";
+    }
+        public void raiz(String cadena) {
+        this.resultado=Double.parseDouble(cadena);
+        raiz=true;
+        this.cadena="";
+    }
+         public void seno(String cadena) {
+        this.resultado=Double.parseDouble(cadena);
+        seno=true;
+        this.cadena="";
+    }
+          public void coseno(String cadena) {
+        this.resultado=Double.parseDouble(cadena);
+        coseno=true;
+        this.cadena="";
+    }
+           public void tangente(String cadena) {
+        this.resultado=Double.parseDouble(cadena);
+        tangente=true;
+        this.cadena="";
+    }
+            public void IVA(String cadena) {
+        this.resultado=Double.parseDouble(cadena);
+        IVA=true;
+        this.cadena="";
+    }
+    
+            public double resultado(String numero) {
+                
+                if(suma==true){
+                    resultado=resultado+Double.parseDouble(cadena);
+                }
+                else if(resta==true){
+                    resultado=resultado-Double.parseDouble(cadena);
+                }
+                else if(multiplicacion==true){
+                    resultado=resultado*Double.parseDouble(cadena);
+                }
+                else if(division==true){
+                    resultado=resultado/Double.parseDouble(cadena);   
+                }
+                else if(division==true){
+                    resultado=resultado/Double.parseDouble(cadena);   
+                }
+                else if(raiz==true){
+                    resultado=Math.pow(resultado,1.0/Double.parseDouble(numero));   
+                }
+                else if(seno==true){
+                    double seno=Math.toRadians(resultado);  
+                    resultado=Math.sin(seno);
+                }
+                else if(coseno==true){
+                    double coseno=Math.toRadians(resultado);  
+                    resultado=Math.cos(coseno);
+                }
+                else if(tangente==true){
+                    double tangente=Math.toRadians(resultado);  
+                    resultado=Math.tan(tangente);
+                }
+                else if(potencia=true){
+                    resultado=Math.pow(resultado, Double.parseDouble(numero));
+                }
+                 else if(IVA=true) {
+                    resultado=(resultado*(Double.parseDouble(numero)/100));
+                }
+                
+                
+        suma=false;
+        resta=false;
+        multiplicacion=false;
+        division=false;
+        potencia=false;
+        raiz=false;
+        seno=false;
+        coseno=false;
+        tangente=false;
+        IVA=false;
+        
+        return resultado;
+        
+            }
+            
+}
